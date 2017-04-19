@@ -66,7 +66,7 @@ public class AmazonAddToCartTest extends BaseTest {
 	          
 	          
 	 
-	          
+// to run test 	          
 
 	@Test(dataProvider = "search")
 	public void addItemsToCartTest(String dropDownSearch, String item, String person, String price, String searchOpt,

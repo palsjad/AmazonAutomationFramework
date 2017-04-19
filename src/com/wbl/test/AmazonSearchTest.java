@@ -94,7 +94,7 @@ public class AmazonSearchTest extends BaseTest {
 
 		System.out.println("dropDown choice data = reading excel");
 
-		data = ExcelHelper.getExcelData("test-data\\AmazonSearchTestData.xlsx", "dropDownChoice");
+		data = ExcelHelper.getExcelData("test-data\\AmazonSearchTestData.xlsx", "DropDownChoice");
 
 		return data;
 
@@ -128,6 +128,36 @@ public class AmazonSearchTest extends BaseTest {
 		as.allDropDown(dropDownSearch);
 
 		Assert.assertEquals(as.dropDownChoice(item, person), expected1);
+
+	}
+	
+	
+	
+	@Test(dataProvider = "clothing")
+	public void allDropDownTest1(String dropDownSearch, String item, String person, String price, String searchOpt,
+			String sortType, String cartItem, String size, String color, String qnty, String ship, String areaCode,
+			String Expected1, String Expected2, String Expected3, String Expected4, String Expected5) {
+
+		System.out.println("allDropDownTest- complete test");
+		
+		as.allDropDown(dropDownSearch);
+
+	//	Assert.assertEquals(as.allDropDown(dropDownSearch), expected1);
+
+	}
+
+	@Test(dataProvider = "clothing")
+	public void dropDownChoiceTest1(String dropDownSearch, String item, String person, String price, String searchOpt,
+			String sortType, String cartItem, String size, String color, String qnty, String ship, String areaCode,
+			String Expected1, String Expected2, String Expected3, String Expected4, String Expected5)  {
+
+		System.out.println("dropDownChoiceTest - complete test" );
+
+		as.allDropDown(dropDownSearch);
+		
+		as.dropDownChoice(item, person);
+
+	//	Assert.assertEquals(as.dropDownChoice(item, person), Xxpected1);
 
 	}
 

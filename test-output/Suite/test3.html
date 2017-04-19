@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 17 13:30:17 PDT 2017</td>
+<td>Started on:</td><td>Wed Apr 19 10:19:23 PDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (157 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (170 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, leather shoes, Men, $50 to $100, page,Next Page, text,Price: High to Low, Castellano Wingtip Oxford,    8 D(M) US ,2,B005BKQ2YC, brown,2, 2, Y, 94568, Amazon.com: leather shoes - $50 to $100 / Men: Clothing, Shoes & Jewelry, $100.00, 2, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords</td>
+<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, leather shoes, Men, $50 to $100, page,Next Page, text,Price: High to Low, Castellano Wingtip Oxford, native_size_name_4,5, brown,2, 2, Y, 94568, Amazon.com: leather shoes - $50 to $100 / Men: Clothing, Shoes & Jewelry, $100.00, 2, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1495608502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1495608502'><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:153)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace583559449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace583559449'><pre>java.lang.NullPointerException
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:153)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,16 +112,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.wbl.test.AmazonSearchTest@4b952a2d</td></tr>
+<td>com.wbl.test.AmazonSearchTest@cb644e</td></tr>
 <tr>
-<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, dresses, Girls, Under $25, customer review, 4, text,Price: High to Low, Colorblock Poplin Dress, 6,10,B06XFMSNT1,  , 1, N, 94568, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, $25.00, Amazon.com: Under $25 - 4 Stars & Up / Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing</td>
+<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, dresses, Girls, Under $25, , text,Price: High to Low, Colorblock Poplin Dress, native_size_name_10,11,  , 1, N, 94568, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, $25.00, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Under $25 - 4 Stars & Up / Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843299092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace843299092'><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:153)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace453671855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace453671855'><pre>java.lang.NullPointerException
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:153)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,16 +151,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.wbl.test.AmazonSearchTest@4b952a2d</td></tr>
+<td>com.wbl.test.AmazonSearchTest@cb644e</td></tr>
 <tr>
-<td title='com.wbl.test.AmazonSearchTest.sortChoiceTest()'><b>sortChoiceTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, leather shoes, Men, $50 to $100, page,Next Page, text,Price: High to Low, Castellano Wingtip Oxford,    8 D(M) US ,2,B005BKQ2YC, brown,2, 2, Y, 94568, Amazon.com: leather shoes - $50 to $100 / Men: Clothing, Shoes & Jewelry, $100.00, 2, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords</td>
+<td title='com.wbl.test.AmazonSearchTest.sortChoiceTest()'><b>sortChoiceTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, leather shoes, Men, $50 to $100, page,Next Page, text,Price: High to Low, Castellano Wingtip Oxford, native_size_name_4,5, brown,2, 2, Y, 94568, Amazon.com: leather shoes - $50 to $100 / Men: Clothing, Shoes & Jewelry, $100.00, 2, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:150)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace283039401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace283039401'><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:150)
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:141)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace217470033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace217470033'><pre>java.lang.NullPointerException
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:141)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,16 +190,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.wbl.test.AmazonSearchTest@4b952a2d</td></tr>
+<td>com.wbl.test.AmazonSearchTest@cb644e</td></tr>
 <tr>
-<td title='com.wbl.test.AmazonSearchTest.sortChoiceTest()'><b>sortChoiceTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, dresses, Girls, Under $25, customer review, 4, text,Price: High to Low, Colorblock Poplin Dress, 6,10,B06XFMSNT1,  , 1, N, 94568, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, $25.00, Amazon.com: Under $25 - 4 Stars & Up / Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing</td>
+<td title='com.wbl.test.AmazonSearchTest.sortChoiceTest()'><b>sortChoiceTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, dresses, Girls, Under $25, , text,Price: High to Low, Colorblock Poplin Dress, native_size_name_10,11,  , 1, N, 94568, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, $25.00, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Under $25 - 4 Stars & Up / Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:150)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243171897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1243171897'><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:150)
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:141)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace938405008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace938405008'><pre>java.lang.NullPointerException
+	at com.wbl.page.AmazonHomePage.getTitle(AmazonHomePage.java:45)
+	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:46)
+	at com.wbl.test.AmazonSearchTest.sortChoiceTest(AmazonSearchTest.java:141)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -221,7 +229,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.wbl.test.AmazonSearchTest@4b952a2d</td></tr>
+<td>com.wbl.test.AmazonSearchTest@cb644e</td></tr>
 </table><p>
 </body>
 </html>

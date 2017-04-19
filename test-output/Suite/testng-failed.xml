@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="MultiRecordsPageFunctionalityTest(failed)">
+  <test name="SP-dropDownChoice-MultipleRecords(failed)">
     <classes>
-      <class name="com.wbl.test.AmazonAddToCartTest">
+      <class name="com.wbl.test.AmazonSearchTest">
         <methods>
+          <include name="allDropDownTest" invocation-numbers="0 1"/>
           <include name="beforeSuite"/>
-          <include name="addItemsToCartTest" invocation-numbers="0 1"/>
-          <include name="before"/>
+          <include name="dropDownChoiceTest1" invocation-numbers="0 1"/>
           <include name="afterSuite"/>
+          <include name="sortChoiceTest" invocation-numbers="0 1"/>
+          <include name="before"/>
+          <include name="allDropDownTest1" invocation-numbers="0 1"/>
+          <include name="dropDownChoiceTest" invocation-numbers="0 1"/>
+          <include name="searchResultsTest" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.wbl.test.AmazonAddToCartTest -->
+      </class> <!-- com.wbl.test.AmazonSearchTest -->
     </classes>
-  </test> <!-- MultiRecordsPageFunctionalityTest(failed) -->
+  </test> <!-- SP-dropDownChoice-MultipleRecords(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -60,9 +60,9 @@ public class AmazonSearch {
 
 		sel.selectByVisibleText(search); // 'search' comes from the excel file - Clothing, Shoes & Jewelry
 	 
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+	 	WebDriverWait wait = new WebDriverWait(driver, 20);
 
-		element = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-goToHomePage")));
+	 	element = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-goToHomePage")));
 
 		try {
 			Thread.sleep(1000);
@@ -90,6 +90,9 @@ public class AmazonSearch {
 		WebElement element = driver.findElement(ByClass.getByObject("id-searchbox"));
 		element.clear();
 		element.sendKeys(itm); // itm comes from the excel file - watches, leather shoes, dresses
+		
+		 System.out.println("111111111111111111");
+
 
 		driver.findElement(ByClass.getByObject("xpath-searchSubmit")).click();
 
@@ -97,19 +100,25 @@ public class AmazonSearch {
 
 		// person comes from ecel file - women, men, girls
 
-		/*element = wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath(".//a[contains(text(),'" + person + "')]")));*/
-		 
-		 element = wait.until(
-					ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-dropDownChoice" + person + "')]")));
+	 	 element = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath(".//a[contains(text(),'" + person + "')]"))); 
+	 	 
+			element.click();
 
-		element.click();
+		 
+		 System.out.println("222222222222222222 " + person);
+		 
+		/* element = wait.until(
+					ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-dropDownChoice" + person.trim() + "')]")));*/
+
 
 		// ***************** to pause the page so that the page title is read ************************
 
 		wait = new WebDriverWait(driver, 20);
+		
+//		String title = driver.getTitle();
 
-		element = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-goToHomePage")));
+	//	element = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-goToHomePage")));
 
 		try {
 			Thread.sleep(1000);
@@ -117,10 +126,15 @@ public class AmazonSearch {
 			logger.error("thread.sleep erroroed out in the dropdownchoice-1");
 			e.printStackTrace();
 		}
+		
+		
+		String title = driver.getTitle();
 
  
  
-		return driver.getTitle();
+	//	return driver.getTitle();
+		
+		return title;
 
 	}
 	
@@ -137,12 +151,12 @@ public class AmazonSearch {
 
 		// prc comes from ecel file - index,2 , text,Price: High to Low, text,Price: Low to High
 		
-		/*wait.until(ExpectedConditions.visibilityOfElementLocated
+		 wait.until(ExpectedConditions.visibilityOfElementLocated
 				(By.xpath(".//span[contains(text(),'" + prc + "')]"))).click();
-*/		
-		wait.until(ExpectedConditions.visibilityOfElementLocated
+ 		
+	/*	wait.until(ExpectedConditions.visibilityOfElementLocated
 				(ByClass.getByObject("xpath-sortChoice" + prc + "')]"))).click();
-
+*/
 		WebDriverWait expWait = new WebDriverWait(driver, 30);
 
 		WebElement element = expWait
@@ -246,15 +260,15 @@ public class AmazonSearch {
 
 		 
 
-			/*wait.until(ExpectedConditions
+			 wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath(".//span[@class='refinementLink'][text()='" + choice + "']")))
 					.click();
-*/
+ 
 			
 			
-			wait.until(ExpectedConditions
+		/*	wait.until(ExpectedConditions
 					.visibilityOfElementLocated(ByClass.getByObject("xpath-brandButton" + choice + "']"))).click();
-					 
+					 */
 
 			try {
 				Thread.sleep(1000);

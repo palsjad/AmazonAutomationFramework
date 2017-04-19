@@ -374,8 +374,7 @@ public class AmazonAddToCart {
 
  
 		logger.info("total items added in the cart are : " + totalItems);
-
-		driver.findElement(By.id("hlb-view-cart-announce")).click(); // cart button click
+		 
 																		 
 		driver.findElement(ByClass.getByObject("id-cartButtonClick")).click();
 

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 17 13:30:17 PDT 2017</td>
+<td>Started on:</td><td>Wed Apr 19 10:19:23 PDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (57 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38334 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, leather shoes, Men, $50 to $100, page,Next Page, text,Price: High to Low, Castellano Wingtip Oxford,    8 D(M) US ,2,B005BKQ2YC, brown,2, 2, Y, 94568, Amazon.com: leather shoes - $50 to $100 / Men: Clothing, Shoes & Jewelry, $100.00, 2, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace263053820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace263053820'><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
+<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, leather shoes, Men, $50 to $100, page,Next Page, text,Price: High to Low, Castellano Wingtip Oxford, native_size_name_4,5, brown,2, 2, Y, 94568, Amazon.com: leather shoes - $50 to $100 / Men: Clothing, Shoes & Jewelry, $100.00, 2, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords, Amazon.com | Florsheim Castellano Wingtip Oxford | Oxfords</td>
+<td><div><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
+	at org.openqa.selenium.By.xpath(By.java:113)
+	at com.wbl.helper.ByClass.getByObject(ByClass.java:63)
+	at com.wbl.page.AmazonSearch.dropDownChoice(AmazonSearch.java:104)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:154)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1807894765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1807894765'><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
+	at org.openqa.selenium.By.xpath(By.java:113)
+	at com.wbl.helper.ByClass.getByObject(ByClass.java:63)
+	at com.wbl.page.AmazonSearch.dropDownChoice(AmazonSearch.java:104)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:154)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,17 +113,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>0</td>
-<td>com.wbl.test.AmazonSearchTest@2d928643</td></tr>
+<td>34</td>
+<td>com.wbl.test.AmazonSearchTest@5702b3b1</td></tr>
 <tr>
-<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, dresses, Girls, Under $25, customer review, 4, text,Price: High to Low, Colorblock Poplin Dress, 6,10,B06XFMSNT1,  , 1, N, 94568, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, $25.00, Amazon.com: Under $25 - 4 Stars & Up / Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace69062746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace69062746'><pre>java.lang.NullPointerException
-	at com.wbl.page.AmazonSearch.allDropDown(AmazonSearch.java:43)
-	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:169)
+<td title='com.wbl.test.AmazonSearchTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.wbl.test.AmazonSearchTest<br>Parameters: Clothing, Shoes & Jewelry, dresses, Girls, Under $25, , text,Price: High to Low, Colorblock Poplin Dress, native_size_name_10,11,  , 1, N, 94568, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, $25.00, Amazon.com: Under $25 - Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Under $25 - 4 Stars & Up / Girls / Dresses for Women, Girls & Baby Girls: Clothing, Shoes & Jewelry, Amazon.com: Bonnie Jean Girls' Colorblock Poplin Dress: Clothing</td>
+<td><div><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
+	at org.openqa.selenium.By.xpath(By.java:113)
+	at com.wbl.helper.ByClass.getByObject(ByClass.java:63)
+	at com.wbl.page.AmazonSearch.dropDownChoice(AmazonSearch.java:104)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:154)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace68195659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace68195659'><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
+	at org.openqa.selenium.By.xpath(By.java:113)
+	at com.wbl.helper.ByClass.getByObject(ByClass.java:63)
+	at com.wbl.page.AmazonSearch.dropDownChoice(AmazonSearch.java:104)
+	at com.wbl.test.AmazonSearchTest.searchResultsTest(AmazonSearchTest.java:154)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,8 +154,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>0</td>
-<td>com.wbl.test.AmazonSearchTest@2d928643</td></tr>
+<td>4</td>
+<td>com.wbl.test.AmazonSearchTest@5702b3b1</td></tr>
 </table><p>
 </body>
 </html>
