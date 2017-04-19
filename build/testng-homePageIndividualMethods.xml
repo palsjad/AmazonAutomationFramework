@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name="Suite" >
+
+
+ <test name="getSignInTest">
+  <classes>
+  <class name="com.wbl.test.AmazonHomePageTest">
+  <methods>
+      <include name="getSignInTest"></include>
+       
+      </methods>
+  
+  </class>
+  </classes>
+ </test>
+ 
+ 
+ <test name="createAccountPageTest">
+  <classes>
+  <class name="com.wbl.test.AmazonHomePageTest">
+  <methods>
+      <include name="createAccountPageTest"></include>
+      </methods>
+  
+  </class>
+  </classes>
+ </test>
+ 
+
+
+ <test name="HomePageGetPrime">
+  <classes>
+  <class name="com.wbl.test.AmazonHomePageTest">
+  <methods>
+      <include name="tryPrimeTest"></include>
+      </methods>
+  
+  </class>
+  </classes>
+ </test>
+ 
+   
+ <!-- ********************************************** -->
+ 
+  <test name="getDeptDropDownCountTest"> 
+  <classes> 
+ 
+      <class name ="com.wbl.test.AmazonHomePageTest">
+   <methods>
+        <include name="getDeptDropDownCountTest" />
+      </methods>
+   
+      </class>
+    </classes>
+  </test>  
+ 
+ <!-- ********************************************** -->
+ 
+  <test name="HomePageNavigationTest"> 
+  <classes> 
+ 
+      <class name ="com.wbl.test.AmazonHomePageTest">
+   <methods>
+        <include name="NavigateDeptDropDownTest" />
+      </methods>
+   
+      </class>
+    </classes>
+  </test>  
+  
+ <!-- ********************************************** -->
+ 
+  <test name="AccountsAndListDropDownTest"> 
+  <classes> 
+ 
+      <class name ="com.wbl.test.AmazonHomePageTest">
+   <methods>
+        <include name="getAccountDetailsTest" />
+      </methods>
+   
+      </class>
+    </classes>
+  </test>  
+ 
+ 
+  
+ <!-- ********************************************** -->
+
+ 
+</suite>

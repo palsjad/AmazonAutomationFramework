@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+ 
+<suite name="Suite" >
+  
+ <!-- ********************************************** --> 
+ 
+ <test name="test1">
+<!--    <parameter name="searchDatabase1" value="AllDropDown"></parameter>  --> <!-- these parameters are available to all the tests within the Test3  -->
+
+<classes>
+
+ <class name="com.wbl.test.AmazonSearchTest">   
+  <methods>
+      <include name="allDropDownTest"></include>
+   </methods>
+ 
+ 
+  </class>
+ 
+</classes>
+
+</test>
+
+
+ <!-- ********************************************** --> 
+ 
+ 
+<test name="test2">
+ <!--  <parameter name="searchDatabase2" value="DropDownChoice"></parameter>   -->
+
+<classes>
+
+ <class name="com.wbl.test.AmazonSearchTest">   
+  <methods>
+      <include name="DropDownChoiceTest"></include>
+   </methods>
+ 
+ 
+  </class>
+ 
+</classes>
+
+</test>
+
+ <!-- **********************************************  -->
+
+<test name="test3">
+<!--   <parameter name="searchDatabase3" value="Clothing"></parameter>   -->
+<classes>
+
+ <class name="com.wbl.test.AmazonSearchTest">   
+  <methods>
+      <include name="sortChoiceTest"></include>
+            <include name="searchResultsTest"></include>
+      
+   </methods>
+ 
+ 
+  </class>
+ 
+</classes>
+
+</test>
+
+ 
+ <!-- ********************************************** --> 
+ 
+
+<test name="test4">
+<!--   <parameter name="searchDatabase3" value="clothing"></parameter>   -->
+
+<classes>
+
+ <class name="com.wbl.test.AmazonSearchTest">   
+  <methods>
+      <include name="searchResultsTest"></include>
+   </methods>
+ 
+ 
+  </class>
+ 
+</classes>
+
+</test>
+
+ 
+
+</suite>

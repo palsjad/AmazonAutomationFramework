@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+ 	<!-- ********************************************** -->
+
+	<test name="AddToCartFunctionalityTest">
+
+		<groups>
+			<run>
+				<include name="FunctionalityTest"></include>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.wbl.test.AmazonAddToCartTest">
+			</class>
+		</classes>
+	</test>
+
+	<!-- ********************************************** -->
+
+	<test name="MultiRecordsPageFunctionalityTest">
+ 		<classes>
+			<class name="com.wbl.test.AmazonAddToCartTest">
+				<methods>
+					<include name="addItemsToCartTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
+ 
